@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_game"
+            android:scaleType="centerCrop"/>
+
+    <!-- bees group -->
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="500px"
+            android:layout_centerVertical="true"
+    >
+
+        <!-- Lead bee -->
+        <ImageView
+                android:id="@+id/leadBee"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/bee_follow"
+                android:layout_marginLeft="200px"
+                android:layout_marginTop="120px"/>
+
+        <!-- Top bee -->
+        <ImageView
+                android:id="@+id/topBee"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/bee_happy"/>
+
+        <!-- Bottom bee -->
+        <ImageView
+                android:id="@+id/bottomBee"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/bee_happy"
+                android:layout_below="@id/topBee"/>
+
+    </RelativeLayout>
+
+    <!-- Test button to change bee forms -->
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/cryBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cry"/>
+
+        <Button
+                android:id="@+id/followBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow"
+                android:layout_below="@+id/cryBtn"/>
+
+        <Button
+                android:id="@+id/happyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy"
+                android:layout_below="@+id/followBtn"/>
+
+        <Button
+                android:id="@+id/sadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sad"
+                android:layout_below="@+id/happyBtn"/>
+
+    </RelativeLayout>
+
+    <!-- Home button -->
+    <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_home"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="50px"
+            android:layout_alignParentRight="true"/>
+
+    <!-- Left button -->
+    <RelativeLayout
+            android:id="@+id/leftBtn"
+            android:layout_width="350px"
+            android:layout_height="280px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100px"
+            android:layout_marginBottom="100px">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/flower"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left"
+                android:textColor="@color/black"
+                android:background="?android:attr/selectableItemBackground"/>
+    </RelativeLayout>
+
+    <!-- Right button -->
+    <RelativeLayout
+            android:id="@+id/rightBtn"
+            android:layout_width="350px"
+            android:layout_height="280px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100px"
+            android:layout_marginBottom="100px">
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/flower2"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="right"
+                android:textColor="@color/black"
+                android:background="?android:attr/selectableItemBackground"/>
+    </RelativeLayout>
+
+</RelativeLayout>

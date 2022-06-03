@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Menu"
+        android:background="@drawable/bg_menu">
+
+    <!-- Game welcome title of the menu -->
+    <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Welcome to the\nBzzz Game"
+            android:gravity="center"
+            android:textSize="100px"
+            android:textColor="@color/teal_700"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150px"/>
+
+    <!-- Image below the welcome text -->
+    <!-- The size is redefined in the java code -->
+    <ImageView
+            android:id="@+id/beeMenu"
+            android:layout_width="600px"
+            android:layout_height="350px"
+            android:src="@drawable/menu_pic"
+            android:layout_below="@+id/gameTitle"
+            android:layout_centerHorizontal="true"/>
+
+    <!-- Play button -->
+    <Button
+            android:id="@+id/playBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_play"
+            android:text="Play"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/beeMenu"
+            android:layout_marginTop="50px"/>
+
+    <!-- Settings button -->
+    <Button
+            android:id="@+id/settingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_settings"
+            android:text="Settings"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/playBtn"
+            android:layout_marginTop="30px"/>
+
+</RelativeLayout>
