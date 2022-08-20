@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameScene"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".UpdateDialog"></activity>
     </application>
 
 </manifest>

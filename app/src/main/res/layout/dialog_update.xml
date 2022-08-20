@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/update_layout">
+
+        <TextView
+                android:id="@+id/title_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="80px"
+                android:layout_above="@+id/edtxt_word_update"
+                android:layout_marginBottom="130px"
+                android:textColor="@color/black"/>
+
+
+        <EditText
+                android:id="@+id/edtxt_word_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="something"
+                android:layout_above="@+id/edtxt_rightLetter_update"
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"/>
+
+
+        <EditText
+                android:id="@+id/edtxt_rightLetter_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="something"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"/>
+
+        <EditText
+                android:id="@+id/edtxt_falseLetter_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtxt_rightLetter_update"
+                android:hint="something"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"/>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtxt_falseLetter_update"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px">
+
+                <Button
+                        android:id="@+id/btn_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update"/>
+
+                <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:layout_toRightOf="@id/btn_update"
+                        android:layout_marginLeft="200px"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

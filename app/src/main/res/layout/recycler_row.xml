@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/card_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="50px"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"/>
+
+            <TextView
+                    android:id="@+id/card_txt_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First word"
+                    android:textSize="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/card_txt_id"
+                    android:layout_marginLeft="50px"/>
+
+            <TextView
+                    android:id="@+id/card_txt_rightLetter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Right : P"
+                    android:textSize="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/card_txt_word"
+                    android:layout_marginLeft="50px"/>
+
+            <TextView
+                    android:id="@+id/card_txt_falseLetter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False : N"
+                    android:textSize="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/card_txt_rightLetter"
+                    android:layout_marginLeft="50px"/>
+
+            <!-- Image button to modify words -->
+            <ImageButton
+                    android:id="@+id/imgBtn_update"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_modify"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

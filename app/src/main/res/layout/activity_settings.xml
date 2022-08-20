@@ -4,9 +4,65 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <!-- Home button -->
+    <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_home"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="50px"
+            android:layout_alignParentRight="true"/>
+
+    <!-- Edit Text -->
+    <EditText
+            android:id="@+id/edtxt_word"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Settings page"/>
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"
+            android:hint="Word"
+            android:layout_marginTop="150px"/>
+
+    <EditText
+            android:id="@+id/edtxt_rightLetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"
+            android:hint="Right letter"
+            android:layout_below="@+id/edtxt_word"/>
+
+    <EditText
+            android:id="@+id/edtxt_falseLetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"
+            android:hint="False letter"
+            android:layout_below="@+id/edtxt_rightLetter"/>
+
+    <!-- Add button -->
+    <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_below="@+id/edtxt_falseLetter"/>
+
+    <!-- RecyclerView that contains every word of the database -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_add"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"/>
+
 
 </RelativeLayout>
